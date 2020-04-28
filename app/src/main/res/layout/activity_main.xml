@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroung"
+    tools:context=".activity.MainActivity">
+
+  <android.support.v7.widget.CardView
+      android:id="@+id/header"
+      android:layout_width="match_parent"
+      android:layout_margin="5dp"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="3dp"
+      app:cardElevation="3dp">
+
+      <ScrollView
+          android:scrollbars="none"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <LinearLayout
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+              <de.hdodenhof.circleimageview.CircleImageView
+                  android:id="@+id/coffee"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:src="@drawable/coffee"
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  app:civ_border_width="2dp"
+                  app:civ_border_color="@color/holo_orange"/>
+
+              <de.hdodenhof.circleimageview.CircleImageView
+                  android:id="@+id/drink"
+                  android:layout_margin="10dp"
+                  android:src="@drawable/drink"
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  app:civ_border_width="2dp"
+                  app:civ_border_color="@color/holo_green"/>
+
+              <de.hdodenhof.circleimageview.CircleImageView
+                  android:id="@+id/food"
+                  android:layout_margin="10dp"
+                  android:src="@drawable/turkey"
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  app:civ_border_width="2dp"
+                  app:civ_border_color="@color/holo_green"/>
+
+              <de.hdodenhof.circleimageview.CircleImageView
+                  android:id="@+id/soup"
+                  android:layout_margin="10dp"
+                  android:src="@drawable/soup"
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  app:civ_border_width="2dp"
+                  app:civ_border_color="@color/holo_green"/>
+
+              <de.hdodenhof.circleimageview.CircleImageView
+                  android:id="@+id/salad"
+                  android:layout_margin="10dp"
+                  android:src="@drawable/salad"
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  app:civ_border_width="2dp"
+                  app:civ_border_color="@color/holo_green"/>
+
+              <de.hdodenhof.circleimageview.CircleImageView
+                  android:id="@+id/grill"
+                  android:layout_margin="10dp"
+                  android:src="@drawable/skewer"
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  app:civ_border_width="2dp"
+                  app:civ_border_color="@color/holo_green"/>
+
+          </LinearLayout>
+      </ScrollView>
+
+  </android.support.v7.widget.CardView>
+
+   <android.support.v7.widget.CardView
+       android:layout_below="@+id/header"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginBottom="5dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:cardCornerRadius="3dp"
+       app:cardElevation="3dp"
+       android:padding="10dp">
+
+       <RelativeLayout
+           android:layout_margin="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:id="@+id/title"
+               android:text="Coffee"
+               android:textStyle="bold"
+               android:textSize="15sp"
+               android:textColor="@color/holo_black"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <View
+               android:id="@+id/view"
+               android:layout_below="@+id/title"
+               android:layout_width="50dp"
+               android:layout_height="1dp"
+               android:background="@color/holo_black"/>
+
+          <android.support.v7.widget.RecyclerView
+              android:id="@+id/main_recyclerview"
+              android:layout_marginTop="5dp"
+              android:layout_below="@+id/view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+          </android.support.v7.widget.RecyclerView>
+
+       </RelativeLayout>
+
+
+   </android.support.v7.widget.CardView>
+
+</RelativeLayout>

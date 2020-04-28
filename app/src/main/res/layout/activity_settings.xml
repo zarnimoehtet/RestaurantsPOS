@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroung"
+    tools:context=".activity.Settings">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/add_menu_card"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:id="@+id/add_menu"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/add_img"
+                android:src="@drawable/add"
+                android:layout_marginLeft="10dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:id="@+id/add_text"
+                android:text="Add Menu"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/add_img"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/holo_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/show"
+        android:layout_below="@+id/add_menu_card"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:id="@+id/show_menu"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/show_img"
+            android:src="@drawable/list"
+            android:layout_marginLeft="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/show_text"
+            android:text="Show Sold List"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/show_img"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/holo_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/send_menu_card"
+        android:layout_below="@+id/show"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:id="@+id/send_menu"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/send_img"
+            android:src="@drawable/send"
+            android:layout_marginLeft="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/send_text"
+            android:text="Send"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/send_img"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/holo_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/restore_menu_card"-->
+        <!--android:layout_below="@+id/send_menu_card"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:cardElevation="3dp"-->
+        <!--app:cardCornerRadius="5dp">-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/restore_menu"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/restore_img"-->
+                <!--android:src="@drawable/restore"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="35dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/restore_text"-->
+                <!--android:text="Restore Menu"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toRightOf="@+id/restore_img"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/holo_black"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</RelativeLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/backup_menu_card"-->
+        <!--android:layout_below="@+id/restore_menu_card"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:cardElevation="3dp"-->
+        <!--app:cardCornerRadius="5dp">-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/backup_menu"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/backup_img"-->
+                <!--android:src="@drawable/backup"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="35dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/backup_text"-->
+                <!--android:text="Backup Menu"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toRightOf="@+id/backup_img"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/holo_black"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</RelativeLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+
+
+</RelativeLayout>

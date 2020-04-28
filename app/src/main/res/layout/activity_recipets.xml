@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Recipets">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/shop_name"
+                android:textSize="25sp"
+                android:text="EVERMORE"
+                android:textColor="@color/holo_black"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/sub_title"
+                android:textSize="15sp"
+                android:text="Cafe &amp; Restaurant"
+                android:textColor="@color/holo_black"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/address"
+                android:textColor="@color/holo_black"
+                android:textSize="15sp"
+                android:text=""
+                android:layout_below="@+id/sub_title"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:textSize="15sp"
+                android:layout_below="@+id/address"
+                android:textColor="@color/holo_black"
+                android:text="09-456456977, 09-770886977"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/date_header"
+                android:textSize="15sp"
+                android:textColor="@color/holo_black"
+                android:text=""
+                android:layout_below="@+id/phone"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/date_header"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/holo_black"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:text=""
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/holo_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/qty"
+                android:layout_below="@+id/view1"
+                android:textSize="15sp"
+                android:layout_toLeftOf="@+id/op_price"
+                android:text=""
+                android:textColor="@color/holo_black"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/op_price"
+                android:layout_below="@+id/view1"
+                android:textSize="15sp"
+                android:layout_toLeftOf="@+id/mul_price"
+                android:text=""
+                android:textColor="@color/holo_black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/mul_price"
+                android:textSize="15sp"
+                android:layout_below="@+id/view1"
+                android:text=""
+                android:textColor="@color/holo_black"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_below="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/holo_black"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/vouncher_recycler"
+                android:layout_below="@id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/vouncher_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/holo_black"/>
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_below="@+id/view3"
+                android:textSize="15sp"
+                android:text=""
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/holo_black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_below="@+id/view3"
+                android:text=""
+                android:layout_alignParentRight="true"
+                android:textSize="15sp"
+                android:textColor="@color/holo_black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_below="@+id/total_price"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/holo_black"/>
+
+            <TextView
+                android:id="@+id/thank"
+                android:layout_below="@+id/view4"
+                android:text=""
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/holo_black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v7.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/dialog"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:text="Enter New Menu"
+                android:textColor="@color/holo_black"
+                android:textSize="15sp"
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/dialog_close"
+                android:src="@drawable/ic_close"
+                android:layout_alignParentRight="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/dialog_title"
+                android:id="@+id/name_layout"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <me.myatminsoe.mdetect.MMEditText
+                    android:id="@+id/dialog_time"
+                    android:hint="ကြာချိန်"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_below="@+id/name_layout"
+                android:id="@+id/type_layout"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <me.myatminsoe.mdetect.MMEditText
+                    android:id="@+id/dialog_cost"
+                    android:hint="ကျသင့်ငွေ(တစ်နာရီစာ)"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/dialog_add_btn"
+                android:textColor="@android:color/white"
+                android:text="Add"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/type_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/btn_back"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

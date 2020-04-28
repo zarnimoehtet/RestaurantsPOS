@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="250dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:textSize="18sp"
+        android:text="How much they order?"
+        android:layout_margin="10dp"
+        android:textColor="@color/holo_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/title"
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+
+    <ImageView
+        android:id="@+id/close"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+    <LinearLayout
+        android:id="@+id/calculate"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/minus"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/num"
+            android:text="0"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/holo_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/plus"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/okay"
+        android:text="OKAY"
+        android:layout_below="@+id/calculate"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" />
+
+</RelativeLayout>
